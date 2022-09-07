@@ -1,0 +1,67 @@
+.biggest-container{
+    background-color: rgb(135, 110, 234);
+    width: 400px;
+    height: 500px;
+    position: relative;
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.div-container{
+    width: 360px; 
+    height: 460px;
+    background-color:rgb(81, 36, 178);
+    text-align: center;
+    float: left;
+    margin: 10px;
+    display: grid;
+    position: relative;
+    color: rgb(255, 216, 216);
+    justify-content: center;
+    transition: 1s;
+    animation: opacityEvent 2s;
+    border-radius: 2px;
+    font-size: 30px;
+    scale: 1;
+    letter-spacing: 6px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+@keyframes opacityEvent {
+    from {
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.image{
+    margin-top: 10px;
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+}
+
+.card{
+    position: absolute;
+    width: 360px;
+    height: 460px;
+    background-color: rgb(81, 36, 178);
+    transition: 1s;
+    font-size: 10px;
+
+}
+
+.card:hover{
+    width: 360px;
+    height: 460px;
+    background-color: rgb(36, 47, 145);
+    color: rgb(255, 153, 0);
+    font-size: 20px;
+}
+
+
+
