@@ -9,7 +9,7 @@
 
 .author{
     text-align: center;
-    width: 15%;
+    width: 20%;
     height: 60%;
     max-height: 100%;
     display: block;
@@ -17,6 +17,7 @@
     margin-left: auto;
     margin-top: 15px;
 }
+
 
 @media screen and (max-width : 768px){
     .author{
