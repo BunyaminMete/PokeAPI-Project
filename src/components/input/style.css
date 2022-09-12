@@ -1,17 +1,18 @@
 .searchArea{
     width: 70%;
+    min-width: 450px;
     height: 180px;
-    margin-top: 50px;  
-    left: 0%;
     text-align: center;
     margin: auto;
     margin-top: 100px;
     border-radius: 10px;
     background-color: rgb(98, 142, 223);
+    padding-left: 40px;
 }
 
 .searchbar{
-    width: 350px;
+    width: 30%;
+    min-width: 250px;
     height: 50px;
     background-color: rgb(102, 61, 172);
     color: rgb(255, 236, 236);
@@ -23,6 +24,12 @@
     font-family: "Pokemon";
     letter-spacing: 7px;
     position: relative;
+}
+
+@media screen and (max-width : 768px){
+    .searchbar{
+        width: 50%;
+    }
 }
 
 .searchbar:focus{
@@ -37,44 +44,4 @@
     letter-spacing: 7px;
 }
 
-
-.pokeball{
-    position: absolute;
-    width: 100px;
-    top: 130px;
-    right: 350px;
-    animation: toright 4s infinite;
-}
-
-.pokeball2{
-    position: absolute;
-    width: 100px;
-    left: 350px;
-    top: 130px;
-    animation: toleft 4s infinite;
-}
-
-@keyframes toright  {
-    from {
-        width: 10px;
-        right:40%;
-        top: 170px;
-    }
-    to{
-        right: 350px;
-        top: 130px;
-    }
-}
-
-@keyframes toleft {
-    from{
-        width: 10px;
-        left: 40%;
-        top: 170px;
-    }
-    to{
-        left: 350px;
-        top: 130px;
-    }
-}
 

@@ -20,10 +20,10 @@ const Division = ({ children, cardText, weight, src }) => {
           <img className="image" src={src} alt="poke"></img>
           <div className="characterDiv"> {children} </div>
           {showCard && (
-            <div className="card">
+            <span className="card">
               habitat : {cardText} <br />
               weight : {weight}kg
-            </div>
+            </span>
           )}
         </div>
       </div>

@@ -43,6 +43,9 @@ const HomePage = () => {
       if (data.name.includes(event.target.value.toLowerCase())) {
         newData.pokenames.push({ name: data.name, image: data.image, weight: data.weight });
         setData3(newData);
+      } else {
+        newData.length = 0;
+        setData3(newData);
       }
     });
   };
@@ -67,7 +70,6 @@ const HomePage = () => {
             {data.name}
           </Division>
         ))}
-        {}
       </div>
     </>
   );
